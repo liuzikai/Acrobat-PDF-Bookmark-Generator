@@ -1,0 +1,34 @@
+// *********************************************************************
+//
+// ADOBE SYSTEMS INCORPORATED
+// Copyright (C) 2005-2008 Adobe Systems Incorporated
+// All rights reserved.
+//
+// NOTICE: Adobe permits you to use, modify, and distribute this file
+// in accordance with the terms of the Adobe license agreement
+// accompanying it. If you have received this file from a source other
+// than Adobe, then your use, modification, or distribution of it
+// requires the prior written permission of Adobe.
+//
+// *********************************************************************
+
+
+//ACROSDK_SOURCE_TREE_ROOT is a common environment variable used to tell all the .xcconfig files where the root
+//of our source tree is -- currently the same directory as the project file,
+//Plugin Support/Samples/Project_Name/mac
+
+ACROSDK_SOURCE_TREE_ROOT = $(SRCROOT)
+
+// Xcode 3: SRCROOT must be explicitly defined in the Project Inspector General tab
+// or the project will ask to set it when opening
+
+
+//ACROBAT_PLUGINS_FOLDER is another environment variable used to tell the release target 
+//build script where the Acrobat plug-ins directory is located. Currently set to the 
+//Acrobat Professional default install location in Applications
+
+ACROBAT_PLUGINS_FOLDER = /Users/liuzikai/Library/Application Support/Adobe/Acrobat/DC/Plug-ins
+
+
+
+

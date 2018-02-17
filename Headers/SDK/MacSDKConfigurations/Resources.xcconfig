@@ -1,0 +1,66 @@
+// *********************************************************************
+//
+// ADOBE SYSTEMS INCORPORATED
+// Copyright (C) 2005-2008 Adobe Systems Incorporated
+// All rights reserved.
+//
+// NOTICE: Adobe permits you to use, modify, and distribute this file
+// in accordance with the terms of the Adobe license agreement
+// accompanying it. If you have received this file from a source other
+// than Adobe, then your use, modification, or distribution of it
+// requires the prior written permission of Adobe.
+//
+// *********************************************************************
+
+
+//
+// GENERAL - Build Locations
+//
+
+// Put our PCH's in our BuildResults folder with everything else
+SHARED_PRECOMPS_DIR = $(ACROSDK_SOURCE_TREE_ROOT)/BuildResults/pch
+
+// Relocate the built products path to our build directory based on the root of the
+// source tree.  OBJROOT defaults to SYMROOT so objects are located there too.
+SYMROOT = $(ACROSDK_SOURCE_TREE_ROOT)/BuildResults/obj/$(PROJECT_NAME)/$(TARGET_NAME)
+OBJROOT = $(SYMROOT)
+
+//
+// GENERAL - Packaging
+//
+
+// Default to localized.rsrc
+PRODUCT_NAME = Localized
+
+//
+// GENERAL - Deployment
+//
+
+// 10.4 minimum configuration
+MACOSX_DEPLOYMENT_TARGET = 10.4
+
+// Place the built biinary in the location specified by DSTROOT
+DEPLOYMENT_LOCATION = YES
+
+// The location where to place the built binary
+DSTROOT = $(ACROSDK_SOURCE_TREE_ROOT)/BuildResults/$(PRODUCT_DEPLOYMENT_LOCATION)
+
+// Installation path
+INSTALL_PATH = /
+
+// GCC
+
+// Prefix header is nothing
+GCC_PREFIX_HEADER = 
+
+// Precompile the prefix
+GCC_PRECOMPILE_PREFIX_HEADER = NO
+
+//
+// Rez
+//
+
+// Prefix header is in the SDK Headers
+REZ_PREFIX_FILE = Headers/SDK/PIHeaders++.pch
+
+
