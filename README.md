@@ -3,7 +3,7 @@ An Adobe Acrobat DC plug-in to generate PDF bookmarks (catalog) based on given c
 Author: liuzikai  
 Date: 02/18/2018  
 
-Revised based on Adobe Arcobat DC SDK project BasicPlugin.  
+Revised based on Adobe Acrobat DC SDK project BasicPlugin.  
  
 Develop and Test Environment:   
 * macOS 10.13.3
