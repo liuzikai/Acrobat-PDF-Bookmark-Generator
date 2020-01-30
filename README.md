@@ -16,7 +16,7 @@ There are some JS scripts on the Internet that have similar function. However, t
 
 <br>
 
-[中文版使用说明](https://liuzikai.github.io/Acrobat-Bookmark-Generator/)
+[中文说明](https://www.galacticcontender.com/2020/01/29/Acrobat-Bookmark-Generator/)
 
 Install
 ---
